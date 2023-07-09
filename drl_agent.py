@@ -4,6 +4,9 @@ import numpy as np
 import tensorflow as tf
 from collections import deque
 
+from tensorflow.python.client import device_lib
+print(device_lib.list_local_devices())
+
 class DQNAgent:
     def __init__(self, state_size, action_size):
         self.state_size = state_size
